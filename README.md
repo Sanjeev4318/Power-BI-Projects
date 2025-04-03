@@ -2,7 +2,7 @@
 <table>
    <thead>
       <th>Dashboard</th>
-      <th>Resources</th>
+      <th>Link</th>
    </thead>
    <tr>
 <td width=60%>
