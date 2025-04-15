@@ -1,9 +1,19 @@
-# Uber Trip Analysis - Power BI
+# Uber Trip Analysis - Power BI 📊
 This project was made using [Data Tutorials](https://www.youtube.com/@datatutorials1) channel.  
    
-   Goal: Analyse Uber trip data using Power BI to gain insights into booking trends, revenue, and trip efficiency, 
+Goal: Analyse Uber trip data using Power BI to gain insights into booking trends, revenue, and trip efficiency, 
 helping stakeholders make data-driven decisions.
-### Dashboard 
+
+### 📁 Project Files
+| File Name                   | Description                                              |
+|-----------------------------|----------------------------------------------------------|
+| `Location Table.xlsx`       | It has location id,location and city                     |
+| `Uber Trip Details.xlsx`    | Dataset used for the dashboard                           |
+| `UberA.pdf`                 | Exported PDF version of the report for preview/reference |
+
+
+### Dashboard 📊
+
 
 
 https://github.com/user-attachments/assets/01193b2e-aefc-4508-b71e-33cb4288e2be
