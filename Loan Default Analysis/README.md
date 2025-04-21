@@ -62,19 +62,59 @@ The Loan Default Dataset contains information about borrowers who have applied f
 | <b>Loan Date (DD/MM/YYYY) </b> | The date the loan was issued or originated. |
 
 
+## Transform Data
+Added three calculated columns <b>AgeGroup</b>,<b>CreditScoreBins</b> and <b>IncomeBracket</b>  
+### AgeGroup
+Added AgeGroup column using below dax:
 
+      AgeGroup = 
+         SWITCH(TRUE(),
+         Loan_default[Age]<=19,"Teens",
+         Loan_default[Age]<=39,"Adults",
+         Loan_default[Age]<=59,"Middle Age Adults",
+         "Senior Citizens"
+      )
+
+### CreditScoreBins
+Added CreditScoreBins using below dax:
+
+     CreditScoreBins = 
+          SWITCH(TRUE(),
+          Loan_default[CreditScore]<=400,"Poor",
+          Loan_default[CreditScore]<=550,"Fair",
+          Loan_default[CreditScore]<=650,"Good",
+          "Excellent"
+      )
+### IncomeBracket
+Added IncomeBracket using below dax:
+
+         Income Bracket = 
+              SWITCH(TRUE(),
+              Loan_default[Income]<30000, "Low Income",
+              Loan_default[Income]>=30000 && Loan_default[Income]<60000, "Middle Income",
+              Loan_default[Income]>=60000, "High Income"
+         )  
+
+
+## Create a DateMaster table:
+Created the datemaster table using below dax:
+
+               DateMaster = ADDCOLUMNS(
+                  CALENDAR(FIRSTDATE(Loan_default[Loan_Date_DD_MM_YYYY]),LASTDATE(Loan_default[Loan_Date_DD_MM_YYYY])),
+                  "Year", YEAR([Date]),
+                  "MonthNo",MONTH([Date]),
+                  "Month",FORMAT([Date],"mmm")
+               )
+
+## Data Modeling
+Connect Loan_default table to the DateMaster table 
+![DataModeling_SC](https://github.com/user-attachments/assets/b0cc0073-ea0d-40ee-ad2a-234ac255db9e)
 
 ### Dashboard 📊
 
 
 
-https://github.com/user-attachments/assets/01193b2e-aefc-4508-b71e-33cb4288e2be
 
 
-
-
-
-
-
-![Snap 2](https://github.com/Sanjeev4318/Power-BI-Projects/blob/main/Uber%20Trip%20Analysis/Snap%202.jpg)
+![Snap 2]
 
