@@ -39,6 +39,31 @@ To use dataflows we need gateway as well. To set up dataflows I followed below s
 ## Loan Default dataset description:
 The Loan Default Dataset contains information about borrowers who have applied for loans, along with details about their financial status, loan characteristics, and repayment behavior.
 
+| Column Name  | Defination |
+| ------- | ------- |
+| <b>LoanID</b> | A unique identifier for each loan in the dataset. |
+| <b>Age</b> | The borrower's age at the time the loan was issued. |
+| <b>Income</b> | The borrower's annual income |
+| <b>LoanAmount</b> | The total amount of the loan that the borrower is requesting or has been approved for. |
+| <b>CreditScore </b> | A numerical representation of the borrower's creditworthiness, typically ranging from 300 to 850. A higher credit score indicates the borrower is more likely to repay the debt. |
+| <b> MonthsEmployed</b> | The number of months the borrower has been employed at their current job or with their current employer. |
+| <b>NumCreditLines </b> | The total number of active credit lines (e.g., credit cards, loans) the borrower has at the time of applying for the loan. |
+| <b>InterestRate </b> | The annual percentage rate (APR) charged for borrowing the loan amount, usually expressed as a percentage. |
+| <b> LoanTerm</b> | The length of time (in months) over which the loan is to be repaid. |
+| <b>DTIRatio </b> | The Debt-to-Income ratio, which measures the borrower’debt payments relative to their income. A higher ratio can indicate greater financial stress. |
+| <b> Education</b> | The highest level of education the borrower has completed (e.g., High School, Bachelor’s, Master’s, etc.). |
+| <b>EmploymentType </b> | The type of employment the borrower is engaged in (e.g., Full-Time, Part-Time, Self-Employed, etc.). |
+| <b> MaritalStatus</b> | The marital status of the borrower (e.g., Single, Married, Divorced, etc.). |
+| <b>HasMortgage </b> | An  indicator (e.g., Yes/No) that shows whether the borrower has an existing mortgage on a property. |
+| <b>HasDependents </b> | An  indicator (e.g., Yes/No) that shows whether the borrower has dependents (children, other family members) to support. |
+| <b> LoanPurpose</b> | The primary reason for taking out the loan (e.g., Home Purchase, Debt Consolidation, Education, etc.). |
+| <b>HasCoSigner </b> | An  indicator (e.g., Yes/No) that shows whether the borrower has a co-signer for the loan (someone who agrees to take responsibility if the borrower defaults). |
+| <b> Default</b> | An  indicator (e.g., Yes/No) that shows whether the borrower defaulted on the loan or failed to make timely payments. |
+| <b>Loan Date (DD/MM/YYYY) </b> | The date the loan was issued or originated. |
+
+
+
+
 ### Dashboard 📊
 
 
