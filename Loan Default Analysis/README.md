@@ -27,9 +27,17 @@ To use dataflows we need gateway as well. To set up dataflows I followed below s
 - Then click on Add New Tables and select SQL server and provide the details to connect then click on next and select the loan_default table.
 - I have named it as "DataflowsSQL_loan"
 
-## Getting data from dataflow to PowerBI
+## Connecting to dataflow and getting data in power bi desktop:
 
+### Steps:
+- Login to the power bi desktop
+- Click on get data
+- Select dataflows and click on connect
+- Click on signin and click on connect
+- Now click on load 
 
+## Loan Default dataset description:
+The Loan Default Dataset contains information about borrowers who have applied for loans, along with details about their financial status, loan characteristics, and repayment behavior.
 
 ### Dashboard 📊
 
