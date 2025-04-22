@@ -111,6 +111,107 @@ Created the datemaster table using below dax:
 Connect Loan_default table to the DateMaster table 
 ![DataModeling_SC](https://github.com/user-attachments/assets/b0cc0073-ea0d-40ee-ad2a-234ac255db9e)
 
+## Measures Used in this project
+<b>1.Total Loan Amount</b>
+
+         Total Loan Amount = 
+                    SUM(Loan_default[LoanAmount])
+
+<b>2.Loan Default Count</b>
+
+         Loan Default Count = 
+         COUNTROWS(FILTER(Loan_default,Loan_default[Default]=TRUE()))
+
+<b>3.Default Rate by Year</b>
+
+         Default Rate by Year = 
+         VAR TotalLoans = CALCULATE(COUNTROWS(Loan_default),ALLEXCEPT(DateMaster,DateMaster[Year]))
+         VAR defaultloan = CALCULATE(COUNTROWS(FILTER(Loan_default,Loan_default[Default]=TRUE())),
+         ALLEXCEPT(DateMaster,DateMaster[Year]))
+
+         RETURN
+         DIVIDE(defaultloan,TotalLoans)
+
+<b>4.Default Rate by Employment Type</b>
+
+         Default Rate by Employment Type = 
+         VAR LoanCount = COUNTROWS(ALL(Loan_default))
+         VAR DefaultCount = COUNTROWS(FILTER(Loan_default,Loan_default[Default] = TRUE()))
+
+         RETURN
+         CALCULATE(DIVIDE(DefaultCount,LoanCount,0))
+
+<b>5.Average Loan Amount by Age Group</b>
+
+
+         Average Loan Amount by Age Group = 
+         CALCULATE(AVERAGE(Loan_default[LoanAmount]),ALLEXCEPT(Loan_default,Loan_default[AgeGroup]))
+
+<b>6.Average Income by Employment Type</b>
+
+         Average Income by Employment Type = 
+         CALCULATE(AVERAGE(Loan_default[Income]),ALLEXCEPT(Loan_default,Loan_default[EmploymentType]))
+
+<b>7.Total Loan Middle Age Adults</b>
+
+         Total Loan Middle Age Adults = 
+         CALCULATE(SUM(Loan_default[LoanAmount]),Loan_default[AgeGroup]="Middle Age Adults")
+         
+<b>8.Total Loan Adults (Credit Bins)</b>
+
+         Total Loan Adults (Credit Bins) = 
+         CALCULATE(SUM(Loan_default[LoanAmount]),Loan_default[AgeGroup]="Adults")
+
+<b>9.Median by Credit Score</b>
+
+         Median by Credit Score = 
+         MEDIAN(Loan_default[LoanAmount])
+
+         
+<b>10.Loan by Education Type</b>
+
+         Loan by Education Type = 
+         COUNTROWS(FILTER(Loan_default,NOT(ISBLANK(Loan_default[LoanID]))))
+
+<b>11.Average Loan Amt (Excellent Credit Score)</b>
+
+         Average Loan Amt (Excellent Credit Score) = 
+         AVERAGEX(FILTER(Loan_default,Loan_default[CreditScoreBins]="Excellent"),Loan_default[LoanAmount])
+
+<b>12.YTD Loan Amount</b>
+
+         YTD Loan Amount = 
+         CALCULATE(SUM(Loan_default[LoanAmount]),DATESYTD(DateMaster[Date]),
+         ALLEXCEPT(Loan_default,Loan_default[CreditScoreBins],Loan_default[MaritalStatus]))
+
+<b>13.YOY Loan Amount Change</b>
+
+         YOY Loan Amount Change = 
+         VAR CurrentYLoanAmount = CALCULATE(SUM(Loan_default[LoanAmount]),DateMaster[Year]=YEAR(MAX(DateMaster[Date])))
+         VAR PreviousYLoanAmount = CALCULATE(SUM(Loan_default[LoanAmount]),DateMaster[Year]=YEAR(MAX(DateMaster[Date]))-1)
+         VAR Diff = CurrentYLoanAmount-PreviousYLoanAmount
+
+         RETURN
+         DIVIDE(Diff,PreviousYLoanAmount,0)
+ 
+<b>14.YOY Default Loan Count Change</b>
+
+         YOY Default Loan Count Change = 
+         VAR CurrentDLoanCount = CALCULATE(COUNTROWS(FILTER(Loan_default,Loan_default[Default]=TRUE())),
+         DateMaster[Year]=YEAR(MAX(DateMaster[Date])))
+         
+         VAR PYDLoanCount = CALCULATE(COUNTROWS(FILTER(Loan_default,Loan_default[Default]=TRUE())),
+         DateMaster[Year]=YEAR(MAX(DateMaster[Date]))-1)
+
+         VAR Diff = CurrentDLoanCount-PYDLoanCount
+
+         RETURN 
+         DIVIDE(Diff,PYDLoanCount,0)
+
+
+
+
+
 ### Dashboard 📊
 
 
