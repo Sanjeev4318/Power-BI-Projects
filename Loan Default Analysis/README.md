@@ -10,7 +10,8 @@ It is a three page report and here you can see that I have used line charts, rib
 ![SecondPage_SC](https://github.com/user-attachments/assets/9cb923ba-ed0f-49ef-8f1f-1ed81fb36ab3)
 
 ### Third Page: Financial Risk Metrics
-![ThirdPage_SC](https://github.com/user-attachments/assets/fb45b845-39fb-4370-b799-6a381d3fbeef)
+![ThirdPage_SC](https://github.com/user-attachments/assets/bb4c731d-6ee8-4828-88d7-345cb3c0f7ae)
+
 
 ## Data Source : Dataflows (Setting Up Dataflows)
 
