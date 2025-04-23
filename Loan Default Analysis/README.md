@@ -5,8 +5,8 @@ It is a three page report and here you can see that I have used line charts, rib
 ## Dashboard 📊
 
 
+https://github.com/user-attachments/assets/251236c3-5e74-496c-9396-95a6844eea2b
 
-https://github.com/Sanjeev4318/Power-BI-Projects/blob/main/Loan%20Default%20Analysis/LoanAnalysis_ViSnap.mp4
 
 ### First Page: Loan Default Overview
 
@@ -244,7 +244,7 @@ Click on dataflows then click on edit on the right hand side upper cornor then c
   And with respect to the latest date, only five years data years data will be retained.  
 - Then you have the option to detect the data changes, check this box and you can choose a column.
 - Then here we have one more option.Only refresh complete days. Click on the check box.
-- 
+  
 ![IncrementalRefresh_SC2](https://github.com/user-attachments/assets/16c8909f-fcb8-47d0-98c7-8ead677b3a28)
 
 
