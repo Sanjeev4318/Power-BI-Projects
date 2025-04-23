@@ -210,6 +210,43 @@ Connect Loan_default table to the DateMaster table
 
 
 
+## Setting up Schedule Refresh for the dataflow:
+In this project we are using SQL server as a data soruce, so it is important that when data gets updated in SQL Server it should be updated in dataflows as well:
+
+### Steps:
+- Login to the power bi account.
+- Click on the workspace.
+- Click on Schedule icon.  
+![DataFlow1_SC](https://github.com/user-attachments/assets/b35af075-c8b4-49cd-a79a-149edfb53495)
+- Click on refresh, select the time zone, select refresh frequency then select time then click on Apply.
+- To check refresh history, click on workspace the click on three dots in dataflows and then click on Refresh History.
+
+
+## Setting up Incremental Refresh for the dataflow:
+To apply incremental refresh we need one datetime column in dataset. We can change the date column to date time column in power query or in power bi service.
+Click on dataflows then click on edit on the right hand side upper cornor then click on the date column and change the type from date to datetime.
+### Steps:
+- Click on dataflows
+- Click on incremental refresh icon
+ ![IncrementalRefresh_SC1](https://github.com/user-attachments/assets/8035c40b-ebbd-4521-8008-4362d9cad87d)
+- Change the toggle swith to on, select the date time column in Choose a column now here you can define the store rows from the past.
+- Now select the time period in years i have selected 5 Years.
+- Then you have to define a refresh period, Let's say you want only last ten days data to be refreshed.
+  So you can mention ten and choose the period as days.
+- Let's say the data is getting refreshed for the latest ten days.So two things will happen.
+  The data for latest ten days will get refreshed.
+  And with respect to the latest date, only five years data years data will be retained.  
+- Then you have the option to detect the data changes, check this box and you can choose a column.
+- Then here we have one more option.Only refresh complete days. Click on the check box.
+- 
+![IncrementalRefresh_SC2](https://github.com/user-attachments/assets/16c8909f-fcb8-47d0-98c7-8ead677b3a28)
+
+
+
+<  [!NOTE]
+
+<  This data flow contains tables with active incremental refresh policies, which require power BI premium
+<  to refresh to enable refresh, upgrade this workspace to premium capacity.
 
 
 ### Dashboard 📊
