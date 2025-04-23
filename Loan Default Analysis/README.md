@@ -2,6 +2,12 @@
 In this project I have used data flow as the data source and i have used the loan default dataset. 
 It is a three page report and here you can see that I have used line charts, ribbon chart, decomposition tree chart and donut charts.
 
+## Dashboard 📊
+
+
+
+https://github.com/user-attachments/assets/01193b2e-aefc-4508-b71e-33cb4288e2be
+
 ### First Page: Loan Default Overview
 
 ![FirstPage_SC](https://github.com/user-attachments/assets/c609e2a1-8df2-4637-a198-a7f4dd6fd3f0)
