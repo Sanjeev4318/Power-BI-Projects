@@ -44,6 +44,7 @@ https://github.com/user-attachments/assets/8f15f3ce-0b55-42a9-bf56-764e1de77394
         <b>Goal:</b> In this project I have used data flow as the data source and i have used the loan default dataset. It is a three page report and here you can see that I have used line charts, ribbon chart, decomposition tree chart and donut charts.
 <br>
         - Project <a href="https://github.com/Sanjeev4318/Power-BI-Projects/tree/cb8af69d88f07952c083da9f46039b1df2fc7e90/RBC%20Customer%20Churn%20Analysis"> link</a><br>
+  
     </td>
    </tr>
    
