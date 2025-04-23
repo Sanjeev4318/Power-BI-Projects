@@ -243,17 +243,8 @@ Click on dataflows then click on edit on the right hand side upper cornor then c
 
 
 
-<  [!NOTE]
+> [!NOTE]  
+> This data flow contains tables with active incremental refresh policies, which require power BI premium to refresh to enable refresh,
+> upgrade this workspace to premium capacity.
 
-<  This data flow contains tables with active incremental refresh policies, which require power BI premium
-<  to refresh to enable refresh, upgrade this workspace to premium capacity.
-
-
-### Dashboard 📊
-
-
-
-
-
-![Snap 2]
 
