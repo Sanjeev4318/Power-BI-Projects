@@ -46,7 +46,7 @@ https://github.com/user-attachments/assets/8f15f3ce-0b55-42a9-bf56-764e1de77394
 <br>
         - Project <a href="https://github.com/Sanjeev4318/Power-BI-Projects/tree/main/Loan%20Default%20Analysis"> link</a><br>
   
-    </td>
+    
 </tr>
    
 </table>
