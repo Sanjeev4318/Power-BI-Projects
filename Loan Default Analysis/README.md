@@ -1,5 +1,5 @@
 # Loan Default Analysis - Power BI 📊
-In this project I have used data flow as the data source and i have used the loan default dataset. 
+In this project I have used dataflow as the data source and i have used the loan default dataset. 
 It is a three page report and here you can see that I have used line charts, ribbon chart, decomposition tree chart and donut charts.
 
 Project Link [Loan Default Analysis](https://app.powerbi.com/view?r=eyJrIjoiOTFkM2U0N2ItNjljNy00NTE3LTk1MDctYzdlZjU4NDBlYjZjIiwidCI6IjdlY2YxODc3LWY5NmMtNGE1My05YTJjLTIxMWMyZDUwNGViNiJ9&pageName=53e6e13af8b118cc2309).
