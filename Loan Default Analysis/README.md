@@ -2,7 +2,7 @@
 In this project I have used data flow as the data source and i have used the loan default dataset. 
 It is a three page report and here you can see that I have used line charts, ribbon chart, decomposition tree chart and donut charts.
 
-Click hear to view the project [Loan Default Analysis](https://app.powerbi.com/viewr=eyJrIjoiOTFkM2U0N2ItNjljNy00NTE3LTk1MDctYzdlZjU4NDBlYjZjIiwidCI6IjdlY2YxODc3LWY5NmMtNGE1My05YTJjLTIxMWMyZDUwNGViNiJ9&pageName=53e6e13af8b118cc2309)
+Click hear to view the project [Loan Default Analysis] https://app.powerbi.com/viewr=eyJrIjoiOTFkM2U0N2ItNjljNy00NTE3LTk1MDctYzdlZjU4NDBlYjZjIiwidCI6IjdlY2YxODc3LWY5NmMtNGE1My05YTJjLTIxMWMyZDUwNGViNiJ9&pageName=53e6e13af8b118cc2309
 
 <iframe title="LDA" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiOTFkM2U0N2ItNjljNy00NTE3LTk1MDctYzdlZjU4NDBlYjZjIiwidCI6IjdlY2YxODc3LWY5NmMtNGE1My05YTJjLTIxMWMyZDUwNGViNiJ9&pageName=53e6e13af8b118cc2309" frameborder="0" allowFullScreen="true"></iframe>)
 
