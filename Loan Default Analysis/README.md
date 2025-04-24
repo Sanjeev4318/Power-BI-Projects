@@ -250,6 +250,8 @@ Click on dataflows then click on edit on the right hand side upper cornor then c
   
 ![IncrementalRefresh_SC2](https://github.com/user-attachments/assets/16c8909f-fcb8-47d0-98c7-8ead677b3a28)
 
+### Final Incremental Refresh Screenshot
+![IncrementalRefresh_SC3](https://github.com/user-attachments/assets/55f66edd-3cdd-4cfb-831f-ce8c7a60869e)
 
 
 > [!NOTE]  
